@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>DavidDash</title>
+    <script type="text/JavaScript">
+      <!--
+      function timedRefresh(timeoutPeriod) {
+        setTimeout("location.reload(true);",timeoutPeriod);
+      }
+      //   -->
+    </script>
+  </head>
+  <body onload="JavaScript:timedRefresh(300000);">
+    <h1><%= retrieve_last_value(@graph) %> </h1>
+    <%= render_svg_graph(@graph) %>
+    <%= render_svg_graph(@graph3h) %>
+  </body>
+</html>
