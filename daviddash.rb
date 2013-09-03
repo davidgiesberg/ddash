@@ -2,7 +2,7 @@ require "json"
 require "net/http"
 require "uri"
 
-GRAPHITE_RENDER_URL="http://raspberrypi/render?"
+GRAPHITE_RENDER_URL="http://raspberrypi:8090/render?"
 
 set :partial_template_engine, :erb
 enable :partial_underscores
