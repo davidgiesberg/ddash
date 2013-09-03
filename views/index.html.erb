@@ -10,8 +10,14 @@
     </script>
   </head>
   <body onload="JavaScript:timedRefresh(300000);">
-    <h1><%= retrieve_last_value(@graph) %> </h1>
-    <%= render_svg_graph(@graph) %>
-    <%= render_svg_graph(@graph3h) %>
+    <h1>Inside</h1>
+    <h2><%= last_value(@inside).round(0) %> <%= trend @inside %></h2>
+    <%= render_graph @inside %>
+    <%= render_graph @inside3h %>
+    <hr>
+    <h1>Outside</h1>
+    <h2><%= last_value(@outside).round(0) %> <%= trend @outside %></h2>
+    <%= render_graph @outside %>
+    <%= render_graph @outside3h %>
   </body>
 </html>

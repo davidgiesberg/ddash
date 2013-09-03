@@ -1,3 +1,5 @@
 source 'https://rubygems.org'
 gem 'sinatra'
 gem 'graphite_graph'
+gem 'unicorn'
+gem 'sinatra-partial'
